@@ -176,4 +176,8 @@ tr:last-child td{
         width:100%;
         border-radius: 0.8rem; 
     }
+    article>*:nth-child(1n+2){
+    margin-left: 0;
+    margin-right:0;
+    }
 }

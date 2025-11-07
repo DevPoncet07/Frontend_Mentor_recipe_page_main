@@ -11,11 +11,169 @@
     --Blue:hsl(228,45%,44%;)
 }
 
+body{
+    margin :0;
+    font-family: "Outfit", sans-serif;
+        min-width:320px;
+}
+
+main{
+    margin-bottom: 5rem;;
+}
+article>*:nth-child(1n+2){
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+article{
+    margin: 0 0;
+    width: 100%;
+    background-color: var(--White);
+}
+
+.bordered{
+    border-bottom: 1px solid var(--Stone-100);
+    padding-bottom: 1.2rem;
+}
+
+img{
+    width:100%;
+    border-radius: 0.8rem; 
+}
+
+b{
+    font-weight: 600;
+}
+
+h1{
+    font-size: 2.3rem;
+    font-family: "Young Serif",serif;
+    color: var(--Stone-900);
+    font-weight: lighter;
+    margin-bottom:1rem;
+}
+
+.description{
+    color: var(--Stone-600);
+    font-size: 0.95rem;
+    line-height: 1.4rem;
+    
+}
+
+.preparation{
+    margin-top: 2rem;
+    background-color: var(--Rose-50);
+    padding:1rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.preparation>h2{
+    margin-top: 0;
+    color: var(--Rose-800);
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+ul{
+    padding-left:1.2rem;
+}
+
+li{
+    color:var(--Rose-800);
+    margin-bottom:0.5rem;
+    font-size: 0.8rem;
+}
+
+section p{
+    color: var(--Stone-900);
+    font-size: 1rem;
+    margin: 0.6rem 0;
+    margin-left:1rem;
+}
+
+h2{
+    font-family: "Young Serif",serif;
+    font-weight:400;
+    font-size:1.6rem;
+    color: var(--Brown-800);
+}
+
+
+.ingredents ul li{
+    color:var(--Brown-800);
+    font-family: "Outfit";
+    font-size: 1rem;
+}
+
+ol{
+    padding-left: 1.5rem;
+    color: var(--Stone-900);
+}
+
+ol li{
+    font-size: 1rem;
+    font-weight: 600;
+}
+ol p{
+    color: var(--Stone-900);
+    line-height: 1.3rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+}
+
+.nutrition p{
+    margin-left: 0;
+    font-size: 0.9rem;
+}
 .attribution {
      font-size: 1rem; 
      text-align: center;
 }
 
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top:1rem;
+}
+
+td{
+    border-bottom: 1px solid var(--Stone-100);
+}
+td:first-child{
+    padding-left:2rem;
+    font-size: 0.9rem;
+    width:50%;
+}
+td:nth-child(2){
+    color: var(--Brown-800);
+    font-weight: 600;
+}
+td{
+    padding-top:0.6rem;
+    padding-bottom: 0.6rem;
+}
+tr:last-child td{
+    border :0;
+}
+
 .attribution a {
     color: var(--Blue);
+}
+
+@media screen and (min-width:700px){
+    main{
+        background-color: var(--Stone-100);
+        padding:8rem 0;
+    }
+    article{
+        margin: 0 auto;
+        width: 38.5rem;
+        padding:2.3rem;
+        border-radius: 1.4rem;
+    }
+    img{
+        width:100%;
+        border-radius: 0.8rem; 
+    }
 }
